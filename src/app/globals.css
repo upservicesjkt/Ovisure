@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 56% 94%; /* Pale Yellow #FAF0E6 */
+    --foreground: 20 77% 10%; /* Darker brown for text, derived from accent */
+
+    --card: 30 56% 94%;
+    --card-foreground: 20 77% 10%;
+
+    --popover: 30 56% 94%;
+    --popover-foreground: 20 77% 10%;
+
+    --primary: 25 100% 38%; /* Earthy Orange #C45300 */
+    --primary-foreground: 25 100% 98%; /* Light color for text on primary */
+
+    --secondary: 25 100% 58%; /* Lighter Orange for secondary actions */
+    --secondary-foreground: 25 100% 98%;
+
+    --muted: 30 30% 88%; /* Muted version of background */
+    --muted-foreground: 30 20% 45%;
+
+    --accent: 20 77% 20%; /* Deep Brown #5E260B */
+    --accent-foreground: 20 77% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 30% 80%;
+    --input: 30 30% 85%;
+    --ring: 25 100% 48%; /* Ring color based on primary */
+
+    --radius: 0.5rem;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 20 77% 10%; /* Deep Brown for dark background */
+    --foreground: 30 56% 90%; /* Pale Yellowish for dark text */
+
+    --card: 20 77% 10%;
+    --card-foreground: 30 56% 90%;
+
+    --popover: 20 77% 10%;
+    --popover-foreground: 30 56% 90%;
+
+    --primary: 25 100% 42%; /* Slightly adjusted Earthy Orange for dark */
+    --primary-foreground: 25 100% 98%;
+
+    --secondary: 25 100% 32%; /* Darker Orange */
+    --secondary-foreground: 25 100% 98%;
+
+    --muted: 20 50% 18%;
+    --muted-foreground: 30 30% 70%;
+
+    --accent: 30 56% 80%; /* Lighter accent for dark mode */
+    --accent-foreground: 20 77% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 50% 25%;
+    --input: 20 50% 22%;
+    --ring: 25 100% 52%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply font-body;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+    -webkit-touch-callout: none; /* iOS Safari - Disables callout (copy/paste) when holding on an element */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

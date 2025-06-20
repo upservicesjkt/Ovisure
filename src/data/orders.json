@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ratna Putri",
+    "phone": "0123456789",
+    "address": "rajawali selata hahahha",
+    "selectedPackage": "1_box",
+    "quantity": 1,
+    "createdAt": "2025-06-18T06:03:50.169Z"
+  },
+  {
+    "name": "Reza Patel",
+    "phone": "89767484948",
+    "address": "Isisbsksahabaj",
+    "selectedPackage": "2_boxes",
+    "quantity": 2,
+    "createdAt": "2025-06-18T06:05:08.103Z"
+  },
+  {
+    "name": "aldo saputra",
+    "phone": "0123456789",
+    "address": "rajawali selata hahahha",
+    "selectedPackage": "2_boxes",
+    "quantity": 2,
+    "createdAt": "2025-06-18T06:12:39.855Z"
+  }
+]
